@@ -1,19 +1,20 @@
-
 import './App.css';
+
+import {
+  Link,
+  Route,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
+
 import {About} from './components/about.js';
-import {Navbar} from './components/navbar.js';
-import Freetime from './components/freetime.js';
 import {Codesnippets} from './components/codesnippets.js';
 import Footer from './components/footer.js';
+import Freetime from './components/freetime.js';
+import {Navbar} from './components/navbar.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 function App() {
   return (
@@ -34,8 +35,9 @@ function App() {
         </Switch>
      
       </Router>
+      
       </div>
-    <Footer/>
+      <Footer/>
      </div>
 
     
