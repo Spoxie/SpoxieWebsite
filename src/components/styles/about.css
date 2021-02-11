@@ -1,0 +1,26 @@
+.about-flex-container {
+  display: flex;
+  flex-direction: row;
+
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  background-color: aquamarine;
+  border-radius: 25px;
+}
+.about-profile-image {
+  flex-grow: 3;
+}
+.about-profile-image > img {
+  width: 300px; /* width of container */
+
+  height: 300px; /* height of container */
+
+  overflow: hidden;
+  margin: 10px 20px 20px 20px;
+}
+.about-profile-text {
+  flex-grow: 2;
+}

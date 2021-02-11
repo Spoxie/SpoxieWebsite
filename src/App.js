@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {About} from './components/about.js';
+import {Navbar} from './components/navbar.js';
+import Freetime from './components/freetime.js';
+import {Codesnippets} from './components/codesnippets.js';
+import Footer from './components/footer.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<div className ="page-container">
+<div className ="content-wrap">
+<Router>
+<Navbar />
+ <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/codesnippets">
+            <Codesnippets />
+          </Route>
+          <Route path="/freetime">
+            <Freetime />
+          </Route>
+        </Switch>
+     
+      </Router>
+      </div>
+    <Footer/>
+     </div>
+
+    
+);
+
 }
 
 export default App;
