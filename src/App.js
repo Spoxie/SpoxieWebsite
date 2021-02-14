@@ -11,6 +11,7 @@ import {About} from './components/about.js';
 import Codesnippets from './components/codesnippets.js';
 import Footer from './components/footer.js';
 import Freetime from './components/freetime.js';
+import Home from './components/home.js'
 import {Navbar} from './components/navbar.js';
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
@@ -24,20 +25,16 @@ function App() {
 <Router>
 <Navbar />
  <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/codesnippets">
-            <Codesnippets />
-          </Route>
-          <Route path="/freetime">
-            <Freetime />
-          </Route>
-        </Switch>
+
+   <Route path="/" exact component={Home}/>
+   <Route path="/about" component={About}/>
+   <Route path="/freetime" component={Freetime}/>
+   <Route path="/codesnippets" component={Codesnippets}/>
+  </Switch>
+  </Router>
      
-      </Router>
-      
       </div>
+      
       <Footer/>
      </div>
 
