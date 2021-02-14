@@ -20,7 +20,7 @@ import reportWebVitals from './reportWebVitals';
 
 function App() {
   return (
-<div className ="page-container">
+<div className ="page-container bg-green-100">
 <div className ="content-wrap">
 <Router>
 <Navbar />

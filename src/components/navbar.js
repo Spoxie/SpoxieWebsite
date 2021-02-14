@@ -31,9 +31,9 @@ return (
 <nav className="bg-red-100 inset-x-0">
 <div className="flex">
   <div className="w-5/6 h-18" ></div>
-    {menuItems.map((item, i) =>{
+    {menuItems.map((item, index) =>{
       return(
-        <div className="md:text-lg text-black-300 hover:bg-red-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:flex"><Link to={item.url} key={i}>{item.title}</Link></div>
+        <div key ={index} className="md:text-lg text-black-300 hover:bg-red-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:flex"><Link to={item.url}>{item.title}</Link></div>
         )
     })}
     <div className="md:hidden">
@@ -46,9 +46,9 @@ return (
     
 </div>
 {show?<div className="mobile-menu md:hidden text-center">
-      {menuItems.map((item, i) =>{
+      {menuItems.map((item, index) =>{
       return(
-        <div key={i} className="text-black-300 hover:bg-red-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium "><Link to={item.url}>{item.title}</Link></div>
+        <div key ={index} className="text-black-300 hover:bg-red-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium "><Link to={item.url}>{item.title}</Link></div>
         )
     })}
     </div>:null}

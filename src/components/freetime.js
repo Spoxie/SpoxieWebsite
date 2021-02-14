@@ -13,6 +13,7 @@ const Freetime = () =>{
           
         <div key={key} className ="max-w-md mx-auto bg-gray-200 rounded-xl shadow-md overflow-hidden md:max-w-2xl m-2 p-10 " >
         <h1 className="text-2xl">{freetime.headline}</h1>
+        <p>{freetime.paragraph}</p>
         
         </div>
 

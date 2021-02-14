@@ -1,21 +1,31 @@
+import "./styles/about.css";
+
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
-import "./styles/about.css";
+
 export function About() {
   return (
 
     <Spring
       from={{ opacity: 0 }}
       to={{ opacity: 1 }}
+      config={{duration:2000}}
     >
       {props =>(
-        <div className="about-flex-container" style ={props}>
+        <div className="flex flex-wrap content-start ..." style ={props}>
           
-          
-          <div className="m-20 w-1/2 md:w-full">
-            <img src="https://poromagia.com/media/cache/96/e4/96e41d6aae53177e6753231ccc7ac67c.jpg" alt=""></img>
+         
+          <div className="md:w-full text-align: left mr-44  ml-44 mt-20">
+            <h1>Mitä teen tällä hetkellä</h1>
+              <p className="font-mono">Olen tällä hetkellä kolmannen vuoden tieto- ja viestintätekniikan opiskelija HAMK:ssa, jossa olen pyrkinyt suuntaamaan opintoni pääosin webdevaukseen (varsinkin frontend tekniikoihin)
+              Frontend tekniikoitten lisäksi olen kiinnostunut mm. mobiilidevauksesta, jota olen tehnyt Android studion avulla.</p>
           </div>
-          <div className="m-20">Nu excepteur ex. Laborum eu laboris id deserunt deserunt aliquip nostrud proident culpa. Minim ullamco fugiat amet deserunt labore eu minim commodo. Voluptate excepteur non id cillum aliquip laborum ullamco est. Laborum labore exercitation consequat fugiat elit Lorem ex irure non.</div>
+
+          <div className="md:w-full text-align: left mr-44  ml-44 mt-20">
+            <h1>Tavoitteeni</h1>
+              <p className="font-mono">Yksi päätavoitteistani on tulla hyväksi koodaajaksi, ja oppia joka päivä jotain uutta sen saralta. Tällä hetkellä pyrin saamaan työpaikkaa/harjoittelumahdollisuutta, jossa voin kehittää 
+              omia frontend taitoja, mutta myös muutkin tehtävät kiinnostavat minua (backendia olisi todella hauska kokeilla kunnolla)</p>
+          </div>
           
           </div>
       
